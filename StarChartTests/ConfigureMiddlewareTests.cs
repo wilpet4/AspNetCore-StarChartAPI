@@ -24,6 +24,7 @@ namespace StarChartTests
             Assert.True(rgx.IsMatch(file), "`Startup.ConfigureServices` didn't contain a call for `AddMvc` on `services`");
         }
 
+        // TODO This test needs to be updated when the instructions are updated
         [Fact(DisplayName = "Call AddDbContext In ConfigureServices @call-adddbcontext-in-configureservices")]
         public void CallAddApplicationDbContextInConfigureServicesTest()
         {
@@ -44,6 +45,7 @@ namespace StarChartTests
             Assert.True(file.Contains("UseInMemoryDatabase"), @"`Startup.ConfigureServices` didn't provide `options => options.UseInMemoryDatabase(""StarChart"")` as an argument for `AddDbContext<ApplicationDbContext>`");
         }
 
+        //TODO This test needs to change when the instructions are updated
         [Fact(DisplayName = "Call UseMvc In Configure @call-usemvc-in-configure")]
         public void CallUseMvcInConfigureTest()
         {

@@ -34,6 +34,7 @@ If you would rather use something other than Visual Studio
 
 __Note:__ this isn't the only way to accomplish this, however; this is what the project's tests are expecting. Implementing this in a different way will likely result in being marked as incomplete / incorrect.
 
+===NOTE TODO Middleware Configuration needs to be updated to use routing / endpoints===
 - [ ] Adding Middleware/Configuration to `Startup.cs`
   - [ ] In the `ConfigureServices` method call the `AddMvc` method on `services` to add support for MVC middleware.
   - [ ] In the `ConfigureServices` method call `AddDbContext<ApplicationDbContext>` on `services` with the argument `options => options.UseInMemoryDatabase("StarChart")` to point `EntityFramework` to the application's `DbContext`. (Note: You will need to add a `using` directives for `StarChart.Data` and `Microsoft.EntityFrameworkCore`)
